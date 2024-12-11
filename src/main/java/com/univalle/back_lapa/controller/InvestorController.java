@@ -1,14 +1,13 @@
 package com.univalle.back_lapa.controller;
 
 import com.univalle.back_lapa.dto.InvestorDto;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 import java.util.List;
 
 @RestController
+@RequestMapping("/investor")
 public class InvestorController {
     @GetMapping("/investor-list/{productId}/{assignmentTypeId}")
     List<InvestorDto> all(@PathVariable String productId, @PathVariable String assignmentTypeId) {

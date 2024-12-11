@@ -36,6 +36,11 @@ dependencies {
 	testCompileOnly 'org.projectlombok:lombok:1.18.36'
 	testAnnotationProcessor 'org.projectlombok:lombok:1.18.36'
 
+	compileOnly group: 'javax.servlet', name: 'javax.servlet-api', version: '3.0.1'
+
+	implementation group: 'org.json', name: 'json', version: '20090211'
+
+
 }
 
 tasks.named('test') {
