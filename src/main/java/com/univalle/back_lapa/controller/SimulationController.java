@@ -5,12 +5,14 @@ import org.json.JSONException;
 import org.json.JSONObject;
 import org.springframework.http.HttpStatusCode;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/simualtion")
+@CrossOrigin(origins = "*")
 public class SimulationController {
     @PostMapping(path = "/start")
     public ResponseEntity<JSONObject> save(SimulationStartDto simulationStartDto) throws JSONException {

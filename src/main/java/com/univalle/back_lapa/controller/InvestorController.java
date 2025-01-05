@@ -8,7 +8,9 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/investor")
+@CrossOrigin(origins = "*")
 public class InvestorController {
+
     @GetMapping("/investor-list/{productId}/{assignmentTypeId}")
     List<InvestorDto> all(@PathVariable String productId, @PathVariable String assignmentTypeId) {
         List<InvestorDto> investorDtoDtoList = new ArrayList<>();

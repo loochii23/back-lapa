@@ -27,7 +27,7 @@ public class ProductTypeControllerTest {
 
     @Test
     void greetingShouldReturnDefaultMessage() {
-        assertThat(this.restTemplate.getForObject("http://localhost:" + port + "/product-type-list",
+        assertThat(this.restTemplate.getForObject("http://localhost:" + port + "/product/product-type-list",
                 String.class)).contains("[{\"id\":\"2\",\"name\":\"RAPIPLAZO\",\"code\":\"RP\"},{\"id\":\"1\",\"name\":\"RAPIFLEX\",\"code\":\"RF\"}]");
     }
 }

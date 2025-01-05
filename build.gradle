@@ -40,6 +40,8 @@ dependencies {
 
 	implementation group: 'org.json', name: 'json', version: '20090211'
 
+	implementation group: 'org.springdoc', name: 'springdoc-openapi-starter-webmvc-ui', version: '2.6.0'
+
 
 }
 
