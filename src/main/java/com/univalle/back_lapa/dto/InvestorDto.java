@@ -11,5 +11,6 @@ public record InvestorDto(String id,
                           @JsonIgnore
                           String productTypeId,
                           @JsonIgnore
-                          String assignmentTypeId) {
+                          String assignmentTypeId,
+                          Double amount) {
 }
