@@ -12,5 +12,5 @@ public record PredictDto(Integer year,
                          Integer month,
                          Integer day,
                          String productId,
-                         List<InvestorDto> investorList) {
+                         List<InvestorDto> investors) {
 }

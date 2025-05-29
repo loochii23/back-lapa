@@ -4,7 +4,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Builder;
 
-@Builder
+@Builder(toBuilder = true)
 @JsonIgnoreProperties
 public record InvestorDto(String id,
                           String companyName,
@@ -12,5 +12,8 @@ public record InvestorDto(String id,
                           String productTypeId,
                           @JsonIgnore
                           String assignmentTypeId,
-                          Double amount) {
+                          Double amount,
+                          Integer priority,
+                          Double predictAmount,
+                          Integer predictCount) {
 }
